@@ -26,6 +26,11 @@ const routes: Routes = [
   {
     path: 'business/login',
     component: LoginComponent
+  },
+  {
+    path: '**',
+    redirectTo:'business',
+    pathMatch:'full'
   }
 ];
 
